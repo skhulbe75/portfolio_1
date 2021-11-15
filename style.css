@@ -4,6 +4,7 @@
   --rotate2: -1;
   --rotate3: -1;
   --rotate4: -1;
+  --rotate5: -1;
 }
 
 * {
@@ -128,6 +129,7 @@ body {
 .item1 {
   background: url("/images/1.jpg") center no-repeat;
   background-size: cover;
+
   transform: rotate(var(--rotate1));
   transform-origin: center right;
 }
@@ -149,6 +151,12 @@ body {
   background: url("/images/4.jpg") center no-repeat;
   background-size: cover;
   transform: rotate(var(--rotate4));
+  transform-origin: center right;
+}
+.item5 {
+  background: url("/images/5.jpg") center no-repeat;
+  background-size: cover;
+  transform: rotate(var(--rotate5));
   transform-origin: center right;
 }
 
