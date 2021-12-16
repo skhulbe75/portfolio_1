@@ -11,124 +11,305 @@
       src="https://kit.fontawesome.com/41649d1feb.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./libraries/matter.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
-        <i class="fas fa-gem"></i>
-      </div>
-      <div class="container-info">
-        <div class="info">
-          <h1>JUNIOR <br />FRONT-END <br />DEVELOPER</h1>
-          <h3>available from <span>DECEMBER</span></h3>
-        </div>
-        <div class="links">
-          <ul>
-            <li>
-              <a
-                href="mailTo: shubhamkhulbe6@gmail.com "
-                target="_blank"
-                rel="noreferrer"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/skhulbe75"
-                target="_blank"
-                rel="noreferrer"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://angel.co/u/shubham-khulbe-1"
-                target="_blank"
-                rel="noreferrer"
-                >Angel.co</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1I-Gmw-IJmNJSjIgy8zp0SrwD_pQHXdrS/view"
-                target="_blank"
-                rel="noreferrer"
-                >Resume</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="scroll">
-        <lottie-player
-          src="https://assets6.lottiefiles.com/packages/lf20_vjs5zX.json"
-          background="transparent"
-          speed="0.8"
-          style="width: 300px; height: 300px"
-          loop
-          autoplay
-        ></lottie-player>
-      </div>
-
-      <div class="projects-container">
-        <div class="project about">
-          <h2>About_</h2>
-          <p>
-            Hello, My name is Shubham Khulbe, and I'm a Junior Front-end
-            Developer working remotely out of Karnataka, India. I enjoy creating
-            applications that live on the Internet and deliver a change.
-          </p>
-          <p>My Current stack includes.</p>
-          <ul>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>NextJS</li>
-            <li>WordPress</li>
-          </ul>
-          <h2></h2>
-        </div>
-        <a
-          href="https://newsbyspeaking.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          class="project item1"
-        ></a>
-        <a
-          href="https://portfolio-speaks1.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          class="project item2"
-        ></a>
-        <a
-          href="https://weather-speaks.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          class="project item3"
-        ></a>
-        <a
-          href="https://youradvice.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          class="project item4"
-        ></a>
-        <a
-          href="https://stupidgames.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          class="project item5"
-        ></a>
-      </div>
+    <!-- logo -->
+    <div class="logo">
+      <i class="fas fa-gem"></i>
     </div>
+    <!-- End of Logo -->
 
+    <!-- Title & availability -->
+    <div class="availability">
+      <svg
+        class="title"
+        width="470"
+        height="298"
+        viewBox="0 0 470 298"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          data-letter="j"
+          d="M38.16 0.839998V39.08C38.16 45 36.48 49.56 33.12 52.76C29.8133 55.96 25.3333 57.56 19.68 57.56C13.76 57.56 9.01334 55.88 5.44 52.52C1.86667 49.16 0.0800018 44.3867 0.0800018 38.2H13.68C13.68 40.5467 14.16 42.3333 15.12 43.56C16.08 44.7333 17.4667 45.32 19.28 45.32C20.9333 45.32 22.2133 44.7867 23.12 43.72C24.0267 42.6533 24.48 41.1067 24.48 39.08V0.839998H38.16Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="u"
+          d="M62.65 0.839998V34.44C62.65 37.8 63.4767 40.3867 65.13 42.2C66.7833 44.0133 69.21 44.92 72.41 44.92C75.61 44.92 78.0633 44.0133 79.77 42.2C81.4767 40.3867 82.33 37.8 82.33 34.44V0.839998H96.01V34.36C96.01 39.3733 94.9433 43.6133 92.81 47.08C90.6767 50.5467 87.7967 53.16 84.17 54.92C80.5967 56.68 76.5967 57.56 72.17 57.56C67.7433 57.56 63.77 56.7067 60.25 55C56.7833 53.24 54.0367 50.6267 52.01 47.16C49.9833 43.64 48.97 39.3733 48.97 34.36V0.839998H62.65Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="n"
+          d="M155.856 57H142.176L119.296 22.36V57H105.616V0.839998H119.296L142.176 35.64V0.839998H155.856V57Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="i"
+          d="M179.452 0.839998V57H165.773V0.839998H179.452Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="o"
+          d="M215.926 57.56C210.646 57.56 205.793 56.3333 201.366 53.88C196.993 51.4267 193.5 48.0133 190.886 43.64C188.326 39.2133 187.046 34.2533 187.046 28.76C187.046 23.2667 188.326 18.3333 190.886 13.96C193.5 9.58666 196.993 6.17334 201.366 3.72C205.793 1.26667 210.646 0.039999 215.926 0.039999C221.206 0.039999 226.033 1.26667 230.406 3.72C234.833 6.17334 238.3 9.58666 240.806 13.96C243.366 18.3333 244.646 23.2667 244.646 28.76C244.646 34.2533 243.366 39.2133 240.806 43.64C238.246 48.0133 234.78 51.4267 230.406 53.88C226.033 56.3333 221.206 57.56 215.926 57.56ZM215.926 45.08C220.406 45.08 223.98 43.5867 226.646 40.6C229.366 37.6133 230.726 33.6667 230.726 28.76C230.726 23.8 229.366 19.8533 226.646 16.92C223.98 13.9333 220.406 12.44 215.926 12.44C211.393 12.44 207.766 13.9067 205.046 16.84C202.38 19.7733 201.046 23.7467 201.046 28.76C201.046 33.72 202.38 37.6933 205.046 40.68C207.766 43.6133 211.393 45.08 215.926 45.08Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="r"
+          d="M280.897 57L269.217 35.8H265.937V57H252.257V0.839998H275.217C279.644 0.839998 283.404 1.61333 286.497 3.16C289.644 4.70666 291.99 6.84 293.537 9.56C295.084 12.2267 295.857 15.2133 295.857 18.52C295.857 22.2533 294.79 25.5867 292.657 28.52C290.577 31.4533 287.484 33.5333 283.377 34.76L296.337 57H280.897ZM265.937 26.12H274.417C276.924 26.12 278.79 25.5067 280.017 24.28C281.297 23.0533 281.937 21.32 281.937 19.08C281.937 16.9467 281.297 15.2667 280.017 14.04C278.79 12.8133 276.924 12.2 274.417 12.2H265.937V26.12Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="f"
+          d="M39.52 120.84V131.8H16.64V143.64H33.76V154.28H16.64V177H2.96V120.84H39.52Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="r"
+          d="M75.35 177L63.67 155.8H60.39V177H46.71V120.84H69.67C74.0967 120.84 77.8567 121.613 80.95 123.16C84.0967 124.707 86.4433 126.84 87.99 129.56C89.5367 132.227 90.31 135.213 90.31 138.52C90.31 142.253 89.2433 145.587 87.11 148.52C85.03 151.453 81.9367 153.533 77.83 154.76L90.79 177H75.35ZM60.39 146.12H68.87C71.3767 146.12 73.2433 145.507 74.47 144.28C75.75 143.053 76.39 141.32 76.39 139.08C76.39 136.947 75.75 135.267 74.47 134.04C73.2433 132.813 71.3767 132.2 68.87 132.2H60.39V146.12Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="o"
+          d="M125.458 177.56C120.178 177.56 115.324 176.333 110.897 173.88C106.524 171.427 103.031 168.013 100.418 163.64C97.8575 159.213 96.5775 154.253 96.5775 148.76C96.5775 143.267 97.8575 138.333 100.418 133.96C103.031 129.587 106.524 126.173 110.897 123.72C115.324 121.267 120.178 120.04 125.458 120.04C130.738 120.04 135.564 121.267 139.938 123.72C144.364 126.173 147.831 129.587 150.338 133.96C152.898 138.333 154.178 143.267 154.178 148.76C154.178 154.253 152.898 159.213 150.338 163.64C147.778 168.013 144.311 171.427 139.938 173.88C135.564 176.333 130.738 177.56 125.458 177.56ZM125.458 165.08C129.938 165.08 133.511 163.587 136.178 160.6C138.898 157.613 140.258 153.667 140.258 148.76C140.258 143.8 138.898 139.853 136.178 136.92C133.511 133.933 129.938 132.44 125.458 132.44C120.924 132.44 117.298 133.907 114.577 136.84C111.911 139.773 110.577 143.747 110.577 148.76C110.577 153.72 111.911 157.693 114.577 160.68C117.298 163.613 120.924 165.08 125.458 165.08Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="n"
+          d="M212.028 177H198.348L175.468 142.36V177H161.788V120.84H175.468L198.348 155.64V120.84H212.028V177Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="t"
+          d="M262.344 120.84V131.8H247.464V177H233.784V131.8H218.904V120.84H262.344Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="dash"
+          d="M303.61 143.24V154.6H268.41V143.24H303.61Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="e"
+          d="M329.296 131.8V143.16H347.616V153.72H329.296V166.04H350.016V177H315.616V120.84H350.016V131.8H329.296Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="n"
+          d="M409.138 177H395.458L372.578 142.36V177H358.898V120.84H372.578L395.458 155.64V120.84H409.138V177Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="d"
+          d="M440.094 120.84C446.014 120.84 451.187 122.013 455.614 124.36C460.04 126.707 463.454 130.013 465.854 134.28C468.307 138.493 469.534 143.373 469.534 148.92C469.534 154.413 468.307 159.293 465.854 163.56C463.454 167.827 460.014 171.133 455.534 173.48C451.107 175.827 445.96 177 440.094 177H419.054V120.84H440.094ZM439.214 165.16C444.387 165.16 448.414 163.747 451.294 160.92C454.174 158.093 455.614 154.093 455.614 148.92C455.614 143.747 454.174 139.72 451.294 136.84C448.414 133.96 444.387 132.52 439.214 132.52H432.734V165.16H439.214Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="d"
+          d="M24 240.84C29.92 240.84 35.0933 242.013 39.52 244.36C43.9467 246.707 47.36 250.013 49.76 254.28C52.2133 258.493 53.44 263.373 53.44 268.92C53.44 274.413 52.2133 279.293 49.76 283.56C47.36 287.827 43.92 291.133 39.44 293.48C35.0133 295.827 29.8667 297 24 297H2.96V240.84H24ZM23.12 285.16C28.2933 285.16 32.32 283.747 35.2 280.92C38.08 278.093 39.52 274.093 39.52 268.92C39.52 263.747 38.08 259.72 35.2 256.84C32.32 253.96 28.2933 252.52 23.12 252.52H16.64V285.16H23.12Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="e"
+          d="M74.765 251.8V263.16H93.085V273.72H74.765V286.04H95.485V297H61.085V240.84H95.485V251.8H74.765Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="v"
+          d="M157.086 240.84L137.166 297H120.046L100.126 240.84H114.686L128.606 283.24L142.606 240.84H157.086Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="e"
+          d="M176.484 251.8V263.16H194.804V273.72H176.484V286.04H197.204V297H162.804V240.84H197.204V251.8H176.484Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="l"
+          d="M219.765 286.44H237.685V297H206.085V240.84H219.765V286.44Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="o"
+          d="M270.77 297.56C265.49 297.56 260.637 296.333 256.21 293.88C251.837 291.427 248.343 288.013 245.73 283.64C243.17 279.213 241.89 274.253 241.89 268.76C241.89 263.267 243.17 258.333 245.73 253.96C248.343 249.587 251.837 246.173 256.21 243.72C260.637 241.267 265.49 240.04 270.77 240.04C276.05 240.04 280.877 241.267 285.25 243.72C289.677 246.173 293.143 249.587 295.65 253.96C298.21 258.333 299.49 263.267 299.49 268.76C299.49 274.253 298.21 279.213 295.65 283.64C293.09 288.013 289.623 291.427 285.25 293.88C280.877 296.333 276.05 297.56 270.77 297.56ZM270.77 285.08C275.25 285.08 278.823 283.587 281.49 280.6C284.21 277.613 285.57 273.667 285.57 268.76C285.57 263.8 284.21 259.853 281.49 256.92C278.823 253.933 275.25 252.44 270.77 252.44C266.237 252.44 262.61 253.907 259.89 256.84C257.223 259.773 255.89 263.747 255.89 268.76C255.89 273.72 257.223 277.693 259.89 280.68C262.61 283.613 266.237 285.08 270.77 285.08Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="p"
+          d="M349.901 258.92C349.901 262.173 349.154 265.16 347.661 267.88C346.167 270.547 343.874 272.707 340.781 274.36C337.687 276.013 333.847 276.84 329.261 276.84H320.781V297H307.101V240.84H329.261C333.741 240.84 337.527 241.613 340.621 243.16C343.714 244.707 346.034 246.84 347.581 249.56C349.127 252.28 349.901 255.4 349.901 258.92ZM328.221 265.96C330.834 265.96 332.781 265.347 334.061 264.12C335.341 262.893 335.981 261.16 335.981 258.92C335.981 256.68 335.341 254.947 334.061 253.72C332.781 252.493 330.834 251.88 328.221 251.88H320.781V265.96H328.221Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="e"
+          d="M370.703 251.8V263.16H389.023V273.72H370.703V286.04H391.423V297H357.023V240.84H391.423V251.8H370.703Z"
+          fill="#5F9EA0"
+        />
+        <path
+          data-letter="r"
+          d="M428.944 297L417.264 275.8H413.984V297H400.304V240.84H423.264C427.69 240.84 431.45 241.613 434.544 243.16C437.69 244.707 440.037 246.84 441.584 249.56C443.13 252.227 443.904 255.213 443.904 258.52C443.904 262.253 442.837 265.587 440.704 268.52C438.624 271.453 435.53 273.533 431.424 274.76L444.384 297H428.944ZM413.984 266.12H422.464C424.97 266.12 426.837 265.507 428.064 264.28C429.344 263.053 429.984 261.32 429.984 259.08C429.984 256.947 429.344 255.267 428.064 254.04C426.837 252.813 424.97 252.2 422.464 252.2H413.984V266.12Z"
+          fill="#5F9EA0"
+        />
+      </svg>
+      <h3>available from <span>January</span></h3>
+    </div>
+    <!-- End of Title & availability -->
+
+    <!-- Menu -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a
+            href="mailTo: shubhamkhulbe6@gmail.com "
+            target="_blank"
+            rel="noreferrer"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/skhulbe75"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://angel.co/u/shubham-khulbe-1"
+            target="_blank"
+            rel="noreferrer"
+            >Angel.co</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1I-Gmw-IJmNJSjIgy8zp0SrwD_pQHXdrS/view"
+            target="_blank"
+            rel="noreferrer"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- End of Menu -->
+
+    <!-- Scroll widget -->
+    <div id="scroll">
+      <lottie-player
+        src="https://assets6.lottiefiles.com/packages/lf20_vjs5zX.json"
+        background="transparent"
+        speed="0.8"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <!-- End of Scroll Widget -->
+
+    <!-- About -->
+    <div class="about">
+      <h2>About_</h2>
+      <p>
+        Hello, My name is Shubham Khulbe, and I'm a Junior Front-end Developer
+        working remotely out of Karnataka, India. I enjoy creating applications
+        that live on the Internet and deliver a change.
+      </p>
+      <p>My Current stack includes.</p>
+      <ul>
+        <li>#React</li>
+        <li>#TypeScript</li>
+        <li>#NextJS</li>
+        <li>#WordPress</li>
+      </ul>
+    </div>
+    <!-- End of About -->
+
+    <!--Body Border  -->
     <div class="border">
       <div class="top"></div>
       <div class="left"></div>
       <div class="right"></div>
       <div class="bottom"></div>
     </div>
+    <!--Body Border  -->
+
+    <!-- Nav Menu  -->
+    <div id="nav">
+      <div id="content">
+        <h1>Projects</h1>
+        <div class="projects-container">
+          <div class="panel">
+            <iframe
+              seamless="seamless"
+              allowtransparency="true"
+              allowfullscreen="true"
+              frameborder="0"
+              class="frame"
+              src="https://www.gamezop.com/g/Sk1Wyn6XqRH?id=iSEVlAzen"
+            >
+            </iframe>
+          </div>
+          <div class="panel active" style="background-image: url(images/1.jpg)">
+            <a
+              href="https://newsbyspeaking.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Visit</a
+            >
+          </div>
+          <div class="panel" style="background-image: url(images/2.jpg)">
+            <a
+              href="https://portfolio-speaks1.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Visit</a
+            >
+          </div>
+          <div class="panel" style="background-image: url(images/3.jpg)">
+            <a
+              href="https://weather-speaks.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Visit</a
+            >
+          </div>
+          <div class="panel" style="background-image: url(images/4.jpg)">
+            <a
+              href="https://youradvice.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >Visit</a
+            >
+          </div>
+          <div class="panel">
+            <iframe
+              seamless="seamless"
+              allowtransparency="true"
+              allowfullscreen="true"
+              frameborder="0"
+              class="frame"
+              src="https://www.gamezop.com/g/B1MXhUFQke?id=iSEVlAzen"
+            >
+            </iframe>
+          </div>
+        </div>
+        <a id="close"><i class="fas fa-window-close"></i></a>
+      </div>
+      <svg id="rope" xmlns="http://www.w3.org/2000/svg">
+        <path fill="transparent" stroke-width="10px" stroke-linejoin="round" />
+        <circle stroke-width="10px" r="20" id="handle"></circle>
+      </svg>
+    </div>
+
+    <!-- End of Nav Menu -->
+
+    <canvas class="slingshot"></canvas>
+    <canvas class="pull"></canvas>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/slingshot.js"></script>
+    <script type="text/javascript" src="./js/pull.js"></script>
   </body>
 </html>

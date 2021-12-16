@@ -1,4 +1,4 @@
-const projects = document.querySelectorAll(".project");
+const projects = document.querySelectorAll(".about");
 const scroll = document.getElementById("scroll");
 
 const r = document.querySelector(":root");
@@ -21,3 +21,20 @@ const dummy = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 window.addEventListener("scroll", scrollHandler);
+
+const panels = document.querySelectorAll(".panel");
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses();
+    panel.classList.add("active");
+  });
+});
+
+function removeActiveClasses() {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+}
+
+// const support = document.getElementById("support");
+// support.muted = true;
