@@ -59,7 +59,7 @@ body {
   height: 298px;
   opacity: 0;
   pointer-events: none;
-  /* z-index: 500; */
+  z-index: 500;
 }
 /* End of Title & availability */
 
@@ -253,16 +253,17 @@ body {
   stroke: var(--color);
 }
 
-#page {
+.pullText {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: var(--textColor);
+  /* align-items: center; */
+  position: fixed;
+  top: 1rem;
 }
 
-#page > h1 {
+.pullText > h1 {
   font-size: 50px;
 }
 
@@ -296,12 +297,18 @@ body {
 .panel a {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
+  width: 40px;
+  background-color: orangered;
+  border-radius: 50%;
   color: #fff;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0;
   opacity: 0;
+}
+.panel a i {
+  padding: 10px;
 }
 
 .panel.active {

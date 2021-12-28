@@ -20,8 +20,11 @@ class PhysicsEngine {
     let constraints = this.createConstraints();
     Matter.World.add(engine.world, [...bodies, ...constraints]);
 
-    Matter.Engine.run(engine);
     Matter.Render.run(render);
+
+    // Create runner
+    const runner = Matter.Runner.create();
+    Matter.Runner.run(runner, engine);
   }
 
   createBodies() {
