@@ -6,6 +6,7 @@ class Slingshot {
 
   bindEvents() {
     window.addEventListener("resize", this.resizeHandler.bind(this));
+    window.addEventListener("scroll", this.addGift.bind(this));
   }
 
   init() {
@@ -80,6 +81,12 @@ class Slingshot {
 
     // Add Letter
     this.addLetters();
+
+    // Add Snow
+    setInterval(this.addSnow.bind(this), Math.floor(Math.random() * 1000));
+
+    // Add gift
+    // this.addGift.bind(this);
   }
 
   resizeHandler() {
@@ -114,6 +121,66 @@ class Slingshot {
 
       Matter.Composite.add(this.world, rectangle);
     });
+  }
+
+  addSnow() {
+    var boxA1 = Matter.Bodies.circle(
+      Math.floor(Math.random() * this.canvas.width),
+      20,
+      2,
+      {
+        render: {
+          fillStyle: "#fff",
+        },
+        frictionAir: 0.3,
+      }
+    );
+    var boxB1 = Matter.Bodies.circle(
+      Math.floor(Math.random() * this.canvas.width),
+      20,
+      5,
+      {
+        render: {
+          fillStyle: "#fff",
+        },
+        frictionAir: 0.6,
+      }
+    );
+    var boxC1 = Matter.Bodies.circle(
+      Math.floor(Math.random() * this.canvas.width),
+      20,
+      4,
+      {
+        render: {
+          fillStyle: "#fff",
+        },
+        frictionAir: 0.2,
+      }
+    );
+    Matter.Composite.add(this.world, [boxA1, boxB1, boxC1]);
+  }
+
+  addGift() {
+    var rect = Matter.Bodies.rectangle(400, 0, 100, 80, {
+      render: {
+        fillStyle: "#fff",
+      },
+    });
+    let height = window.innerHeight;
+    const y = window.scrollY;
+    let gift = false;
+    if (y > height) {
+      something();
+    }
+    var something = (function () {
+      var executed = false;
+      return function () {
+        if (!executed) {
+          executed = true;
+          Matter.Composite.add(this.world, rect);
+        }
+      };
+    })();
   }
 }
 
